@@ -1,0 +1,124 @@
+#navbar{
+    position: relative;
+}
+
+#navbar .fixed-top{
+    top: 24px;
+}
+
+#navbar .navbar-collapse{
+    justify-content: end;
+}
+
+#navbar .nav-link{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#navbar .navbar-nav{
+    &:nth-child(2){
+        padding-left: 50px;
+        .nav-link{
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+    }
+    &:nth-child(3){
+        padding-left: 50px;
+        .nav-link{
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+    }
+}
+
+.social_black{
+    display: none;
+}
+
+.navbarMain.active{
+    background-color: #fff;
+    top: 0!important;
+    transition: 0.5s all linear;
+}
+
+.navbarMain.active .nav-link{
+    color: #000!important;
+}
+
+.navbarMain.active .social_white{
+    display: none;
+}
+
+.navbarMain.active .social_black{
+    display: inherit;
+}
+
+@media(max-width: 991px){
+    #navbar .nav-link{
+        color: #fff;
+        padding-left: 0px;
+    }
+    .navbarMain{
+        background: #000;
+    }
+    #navbar .navbar-nav:nth-child(2){
+        padding-left: 0px;
+    }
+    .social_white .nav-link img{
+        width: fit-content;
+    }
+    .social_white .nav-link{
+        display: contents;
+        padding-left: 0px;
+    }
+    .social_white .nav-link img{
+        padding: 0.5rem 1rem 0.5rem 0rem;
+    }
+    .navbarMain.active{
+        background: #000;
+    }
+    .navbarMain.active .nav-link{
+        color: #fff!important;
+    }
+    .navbarMain.active .social_black{
+        display: none;
+    }
+    .navbarMain.active .social_white{
+        display: inherit;
+    }
+}
+
+// Common Modal
+.commonbackground{
+    .ant-modal-header{
+        display: none;
+    }
+    .ant-modal-content{
+        background-color: #141414;
+        border-radius: 10px;
+    }
+    .ant-modal-footer{
+        border-top: 1px solid #141414;
+        display: none;
+    }
+    .ant-modal-close-x{
+        width: auto;
+        height: auto;
+        line-height: inherit;
+        svg{
+            fill: #fff;
+        }
+    }
+    .ant-modal-close{
+        top: 15px;
+        right: 15px;
+    }
+    .ant-modal-body{
+        padding: 0px;
+        
+    }
+}

@@ -1,0 +1,110 @@
+.welcome_lookrare{
+    max-width: 400px!important;
+}
+
+.welcome_content{
+    font-family: 'Mulish', sans-serif;
+    img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.welcome_subcontent{
+    padding: 24px 24px 24px 24px;
+}
+
+.welcome_subcontent{
+    h4{
+        font-weight: 700;
+        letter-spacing: 0.4px;
+    }
+    p{
+        color: #fff;
+        letter-spacing: 0.5px;
+    }
+    a{
+        text-decoration: underline;
+        color: #ff5900;
+    }
+}
+
+.checkbox_main{
+    .form-group {
+        display: block;
+        margin-bottom: 15px;
+    }
+      
+    .form-group input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+    }
+      
+    .form-group label {
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+    }
+      
+    .form-group label:before {
+        content:'';
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 0px solid #0079bf;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 5px;
+        background-color: #fff;
+    }
+      
+    .form-group input:checked + label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 9px;
+        width: 4px;
+        height: 9px;
+        border: solid #ff5900;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}
+
+.welcome_lookrare{
+    .ant-modal-footer{
+        padding: 10px 0px 0px 10px;
+        button{
+            &:nth-child(1){
+                display: none;
+            }
+            &:nth-child(2){
+                background-color: #ff5900;
+                border: 0px;
+                width: 150px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.welcome_content{
+    button{
+        background-color: #ff5900;
+        display: block;
+        margin: 0 0 0 auto;
+        padding: 5px 15px;
+        font-weight: 600;
+        color: #fff;
+        border: 1px solid #ff5900;
+        border-radius: 3px;
+    }
+}

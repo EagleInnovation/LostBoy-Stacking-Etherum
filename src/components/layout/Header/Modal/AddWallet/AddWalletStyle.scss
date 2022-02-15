@@ -1,0 +1,74 @@
+.addwallet_main{
+    max-width: 400px!important;
+}
+
+.addwallet_content{
+    padding: 24px;
+    font-family: 'Mulish', sans-serif;
+    img{
+        width: 30%;
+        display: block;
+        margin: 0 auto 25px auto;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+    }
+}
+
+.add_metamask{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    &:hover{
+        color: #ff5900;
+    }
+    span{
+        border: 1px solid #fff;
+        padding: 0px 8px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+}
+
+.addwallet_content{
+    p{
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        margin: 20px 0px;
+        font-weight: 400;
+    }
+}
+
+.addwallet_content{
+    .addwallet_button{
+        button{
+            &:nth-child(1){
+                width: 50%;
+                background: transparent;
+                border: 0px;
+                color: #fff;
+            }
+            &:nth-child(2){
+                background-color: #ff5900;
+                border: 0px;
+                width: 50%;
+                height: 50px;
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: 0.4px;
+                transition: 0.5s all linear;
+                &:hover{
+                    background-color: transparent;
+                    color: #ff5900;
+                }
+            }
+        }
+    }
+}

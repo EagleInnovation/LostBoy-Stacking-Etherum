@@ -1,0 +1,151 @@
+.stake_head{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    margin-bottom: 20px;
+}
+
+.unstake_section{
+    border-right: 1px dashed rgba(255,255,255,0.1);
+    padding-right: 15px;
+}
+
+.unstake_subsection h5{
+    color: #fff;
+}
+
+.white_button{
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 7px 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: 0.5s all linear;
+}
+
+.white_button{
+    &:hover{
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+}
+
+// UNSTAKE LIST
+.unstake_list{
+    margin-bottom: 25px;
+}
+
+.unstake_list input{
+    display: none;
+}
+
+.unstake_list label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.unstake_list label:before {
+    color: white;
+    content: " ";
+    display: block;
+    border: 2px solid #2979F2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    border-radius: 3px;
+    box-shadow: 1px 0px 11px 0px rgba(255,255,255,1);
+}
+
+.unstake_list label span{
+    width: 0;
+    height: 0;
+    border-top: 35px solid #2979F2;
+    border-left: 35px solid transparent;
+    position: absolute;
+    right: 0;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+
+.unstake_list label img{
+    &:nth-child(3){
+        top: 3px;
+        position: absolute;
+        right: 3px;
+        z-index: 2!important;
+        width: 15px;
+        transition-duration: 0.4s;
+        transform: scale(0);
+    }
+}
+
+.unstake_list label img {
+    width: 100%;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+.lostboy_img{
+    height: 93px;
+    object-fit: cover;
+}
+
+.unstake_list :checked + label {
+    border-color: #ddd;
+}
+
+.unstake_list :checked + label:before {
+    content: "";
+    transform: scale(1);
+    z-index: 1;
+}
+
+.unstake_list :checked + label span{
+    content: "";
+    transform: scale(1);
+    z-index: 1;
+}
+
+.unstake_list :checked + label img:nth-child(3){
+    content: "";
+    transform: scale(1);
+    z-index: 1;
+}
+
+.unstake_list :checked + label img {
+    z-index: -1;
+}
+
+.unstake_list P{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+
+@media(max-width: 1199px){
+    .lostboy_img{
+        height: auto;
+    }
+    .unstake_section{
+        margin-bottom: 50px;
+        border-right: 0px;
+    }
+    .white_button{
+        display: block;
+        margin: 0 auto;
+    }
+}
