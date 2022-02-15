@@ -1,0 +1,31 @@
+/* Styles go here */
+
+.padding50{
+    padding: 50px 20px;
+}
+
+.table-cell{
+    display: table-cell;
+}
+.vetical-align-middle{
+    vertical-align: middle;
+}
+
+.loaderScreen{
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    background: rgb(128 128 128 / 40%);
+    position: absolute;
+    z-index: 9;
+}
+
+.loaderScreen span{
+    font-size: 28px;
+    position: relative;
+    top: 50%;
+    z-index: 9999;
+    font-weight: bold;
+}
