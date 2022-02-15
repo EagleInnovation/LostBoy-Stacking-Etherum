@@ -1,0 +1,38 @@
+{
+  "name": "truffle-create-react-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "cd web-app && yarn test",
+    "lint": "standard | snazzy",
+    "lint-fix": "standard --fix --verbose | snazzy"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "build/**",
+      "node_modules/**",
+      "web-app/node_modules/**",
+      "web-app/src/contracts"
+    ],
+    "envs": [
+      "es6",
+      "browser",
+      "jest"
+    ],
+    "globals": [
+      "artifacts",
+      "contract",
+      "assert"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "@truffle/hdwallet-provider": "^1.5.0"
+  }
+}
